@@ -1,0 +1,123 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 50px;
+  background-color: rgb(255, 217, 102);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body {
+  background-color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  border-radius: 20px;
+  width: 420px;
+  height: 420px;
+}
+
+#text {
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(241, 34, 50);
+  font-family: "Dosis", sans-serif;
+  object-fit: contain;
+  margin-top: -30px;
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-family: "Dosis", sans-serif;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(241, 34, 50);
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  overflow: hidden
+}
+
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 68, 140);
+    width: 0px;
+    height: 0px;
+    left: var(--xpos);
+    top: var(--ypos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width .5s, height .5s;
+}
+
+.btn:hover::before{
+    width: 300px;
+    height: 300px;
+}
+
+#Title{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  color: white;
+  background-color: rgb(255, 217, 102);
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+#List{
+  font-family: "Dosis", sans-serif;
+  font-style: bold;
+  font-size: 25px;
+  color: rgb(241, 34, 50);
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  padding-bottom: 2rem;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
